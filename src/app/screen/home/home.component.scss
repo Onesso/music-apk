@@ -1,0 +1,35 @@
+.root {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d5deef;
+
+  .home {
+    .home-card {
+      width: 60vw;
+      height: 80vh;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: #f0f3fa;
+      padding: 10px 20px;
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 600px) {
+//   .root {
+//     .home {
+//       .home-card {
+//       }
+//     }
+//   }
+// }

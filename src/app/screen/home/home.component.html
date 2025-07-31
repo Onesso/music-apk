@@ -1,0 +1,33 @@
+<div class="root">
+  <div class="home">
+    <mat-drawer-container class="example-container" autosize>
+      <mat-drawer #drawer class="example-sidenav" mode="side">
+        <mat-card class="home-card">
+          <mat-card-header>
+            <mat-card-actions class="header">
+              <button
+                matIconButton
+                aria-label="setting"
+                (click)="drawer.toggle()"
+              >
+                <mat-icon>more_vert</mat-icon>
+              </button>
+              <span class="title">Playlist</span>
+              <button matIconButton aria-label="add song">
+                <mat-icon>add</mat-icon>
+              </button>
+            </mat-card-actions>
+          </mat-card-header>
+          <mat-card-content>
+            <span>this is the content</span>
+          </mat-card-content>
+        </mat-card>
+      </mat-drawer>
+      <div class="example-sidenav-content">
+        <button type="button" matButton (click)="drawer.toggle()">
+          Toggle sidenav
+        </button>
+      </div>
+    </mat-drawer-container>
+  </div>
+</div>
